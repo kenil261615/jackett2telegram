@@ -193,7 +193,7 @@ def cmd_help(update: Update, context: CallbackContext):
         "\n\- /list \- Lists all the titles and the asociated Jackett RSS links from the DB\." +
         "\n\- /test JACKETT\_RSS\_FEED\_URL \- Inbuilt command that fetches a post \(usually latest\) from a Jackett RSS\." +
         "\n\nIn order to use *Blackhole*, your _Torrent_ client must support it and be configured to point to *Jackett2Telegram* _Blackhole_ folder\."
-        "\n\nIf you like the project, star it on [GitHub](https://github\.com/danimart1991/jackett2telegram)\.")
+        "\n\nIf you like the project, star it on [GitHub](https://t\.me/jetbots)\.")
 
 
 def rss_monitor(context: CallbackContext):
