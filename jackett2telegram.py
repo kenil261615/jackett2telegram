@@ -29,7 +29,7 @@ levels = {
 }
 
 token = "5171615769:AAGeMiFSOc2iNxslbiTFnr1pP8uL4Tw9-BM"
-chatid = [jetbots_rarbg, 1856089576]
+chatid = [-1001646745862, 1856089576]
 delay = 60
 log_level = levels.get(os.environ['LOG_LEVEL'].lower()) if os.environ.get(
     'LOG_LEVEL') else logging.INFO
