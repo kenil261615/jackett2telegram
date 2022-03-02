@@ -28,10 +28,9 @@ levels = {
     'debug': logging.DEBUG
 }
 
-token = os.environ['TOKEN'] if os.environ.get('TOKEN') else "5171615769:AAGeMiFSOc2iNxslbiTFnr1pP8uL4Tw9-BM"
-chatid = os.environ['CHATID'] if os.environ.get(
-    'CHATID') else "-1001646745862,1856089576"
-delay = int(os.environ['DELAY']) if os.environ.get('DELAY') else 60
+token = "5171615769:AAGeMiFSOc2iNxslbiTFnr1pP8uL4Tw9-BM"
+chatid = [-1001646745862,1856089576]
+delay = 60
 log_level = levels.get(os.environ['LOG_LEVEL'].lower()) if os.environ.get(
     'LOG_LEVEL') else logging.INFO
 
@@ -193,7 +192,7 @@ def cmd_help(update: Update, context: CallbackContext):
         "\n\- /list \- Lists all the titles and the asociated Jackett RSS links from the DB\." +
         "\n\- /test JACKETT\_RSS\_FEED\_URL \- Inbuilt command that fetches a post \(usually latest\) from a Jackett RSS\." +
         "\n\nIn order to use *Blackhole*, your _Torrent_ client must support it and be configured to point to *Jackett2Telegram* _Blackhole_ folder\."
-        "\n\nIf you like the project, star it on [GitHub](https://t\.me/jetbots)\.")
+        "\n\nIf you like the project, star it on [GitHub](https://github\.com/danimart1991/jackett2telegram)\.")
 
 
 def rss_monitor(context: CallbackContext):
